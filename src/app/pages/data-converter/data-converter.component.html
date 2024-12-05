@@ -1,0 +1,22 @@
+<p class="text-4xl w-10 font-semibold">Data Converter</p>
+
+<p-splitter styleClass="mb-5">
+  <ng-template pTemplate>
+    <div class="flex flex-column align-items-start">
+      <p class="text-2xl w-10 font-semibold">Source</p>
+
+      <p-dropdown
+        [options]="dataSources"
+        [(ngModel)]="selectedDataSource"
+        optionLabel="name"
+        placeholder="Select a data source"
+      />
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate>
+    <div class="flex flex-column align-items-start">
+      <p class="text-2xl w-10 font-semibold">Target</p>
+    </div>
+  </ng-template>
+</p-splitter>

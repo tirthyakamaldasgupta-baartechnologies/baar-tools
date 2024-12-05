@@ -16,6 +16,10 @@ export class IndexComponent {
       name: 'String Editor',
       url: '/string-editor',
     },
+    {
+      name: 'Data Converter',
+      url: '/data-converter',
+    },
   ];
 
   constructor(private _router: Router) {}
