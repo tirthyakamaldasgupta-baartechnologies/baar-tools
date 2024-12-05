@@ -1,1 +1,14 @@
-<p>index works!</p>
+<p class="text-4xl w-10 font-semibold">Tools</p>
+
+<div class="grid">
+  @for (tool of tools; track $index) {
+  <div
+    class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-2"
+    (click)="navigateToToolPage($index)"
+  >
+    <p-card header="{{ tool.name }}">
+      <!-- <p class="m-0">Lorem ipsum dolor sit amet...</p> -->
+    </p-card>
+  </div>
+  }
+</div>
